@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>صالون جزرة للحلاقة</title>
+    <meta name="description"
+        content="صالون جزرة هو اختيارك الأفضل للحصول على قصة حلاقة عصرية وفاخرة، مع عناية متكاملة باللحية والبشرة بأعلى مستوى من الاحترافية. منذ تأسيسنا ونحن نحرص على تقديم أحدث قصات الحلاقة والخدمات المميزة داخل أجواء مودرن تمنحك تجربة استثنائية بكل تفاصيلها.">
+    <meta name="author" content="Magdy Ziad">
+    <meta property="og:title" content="صالون جزرة ">
+    <meta property="og:description" content="أفضل صالون حلاقة رجالي بتصميم عصري وخدمات احترافية.">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="صالون حلاقة, حلاق رجالي, قصات شعر رجالي, حلاقة عصرية, عناية باللحية, صالون جزرة">
+    <meta property="og:locale" content="ar_AR">
+    <meta name="theme-color" content="#0e0e0e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Cairo:wght@400;600;700;900&amp;family=Tajawal:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#93000a",
+                        "secondary": "#c8c6c5",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed-variant": "#753400",
+                        "on-surface-variant": "#e0c0af",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-secondary": "#313030",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-fixed": "#a5eeff",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-container": "#00b0c9",
+                        "tertiary-fixed-dim": "#00daf8",
+                        "surface": "#131313",
+                        "secondary-container": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary": "#00363f",
+                        "surface-tint": "#ffb68b",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#994700",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-tertiary-fixed-variant": "#004e5a",
+                        "surface-container-highest": "#353534",
+                        "on-primary": "#522300",
+                        "on-tertiary-fixed": "#001f25",
+                        "on-background": "#e5e2e1",
+                        "background": "#131313",
+                        "primary-fixed-dim": "#ffb68b",
+                        "primary": "#ffb68b",
+                        "surface-bright": "#3a3939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-variant": "#353534",
+                        "outline": "#a78b7c",
+                        "surface-dim": "#131313",
+                        "on-tertiary-container": "#003d47",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "on-primary-fixed": "#321200",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-container": "#ff7a00",
+                        "primary-fixed": "#ffdbc8",
+                        "outline-variant": "#584235",
+                        "on-primary-container": "#5c2800",
+                        "tertiary": "#00daf8",
+                        "secondary-fixed-dim": "#c8c6c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Tajawal", "sans-serif"],
+                        "label-md": ["Cairo", "sans-serif"],
+                        "headline-lg": ["Cairo", "sans-serif"],
+                        "headline-md": ["Cairo", "sans-serif"],
+                        "headline-xl": ["Cairo", "sans-serif"],
+                        "label-sm": ["Cairo", "sans-serif"],
+                        "headline-lg-mobile": ["Cairo", "sans-serif"],
+                        "body-lg": ["Tajawal", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(32, 31, 31, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 122, 0, 0.3);
+            box-shadow: 0 0 30px rgba(255, 122, 0, 0.08);
+        }
+
+        .orange-glow {
+            text-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
+        }
+
+        .scissors-animate {
+            animation: scissors-cut 2s infinite ease-in-out;
+            transform-origin: center;
+        }
+
+        @keyframes scissors-cut {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(15deg);
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #131313;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ff7a00;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="font-body-md custom-scrollbar">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-sm h-20">
+        <nav
+            class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
+            <div class="flex items-center gap-4">
+                <img alt="Jazara Logo" class="h-12 sm:h-16 w-auto object-contain" src="Images/Logo.png">
+            </div>
+            <a
+                href="https://wa.me/201104846932" target="_blank"
+                class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md font-bold hover:opacity-80 transition-all duration-300">احجز
+                الآن</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div
+            class="container max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col items-center text-center">
+            <div class="mb-8 opacity-90">
+                <svg class="text-primary" fill="none" height="80" viewbox="0 0 100 100" width="80"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="scissors-animate"
+                        d="M30 40C30 45.5228 25.5228 50 20 50C14.4772 50 10 45.5228 10 40C10 34.4772 14.4772 30 20 30C25.5228 30 30 34.4772 30 40ZM30 40L80 70M30 60C30 65.5228 25.5228 70 20 70C14.4772 70 10 65.5228 10 60C10 54.4772 14.4772 50 20 50C25.5228 50 30 54.4772 30 60ZM30 60L80 30"
+                        stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+                </svg>
+            </div>
+            <h1 class="font-headline-xl text-headline-lg md:text-headline-xl md:text-[64px] text-on-surface mb-6 leading-tight">
+                جزرة: حيث الفن <span class="text-primary-container">يلتقي بالأناقة</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                تجربة حلاقة استثنائية تجمع بين الحرفية التقليدية واللمسات العصرية. نحن لا نغير مظهرك فحسب، بل نعيد تعريف
+                ثقتك بنفسك في قلب الدوحة.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a
+                    href="https://wa.me/201104846932" target="_blank"
+                    class="bg-primary-container text-on-primary-container px-10 py-4 rounded-lg font-headline-md text-headline-sm md:text-headline-md font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                    احجز موعدك
+                </a>
+                <a
+                    href="#services"
+                    class="border border-primary-container text-primary-container px-10 py-4 rounded-lg font-headline-md text-headline-sm md:text-headline-md font-bold hover:bg-primary/5 transition-colors">
+                    استكشف خدماتنا
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
+            <span class="material-symbols-outlined text-primary text-4xl">expand_more</span>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 bg-surface-container-lowest" id="about">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-4 bg-primary/20 rounded-xl blur-xl group-hover:bg-primary/30 transition-all">
+                </div>
+                <img alt="Our Craft" class="relative rounded-xl w-full h-[500px] object-cover border border-white/5"
+                    data-alt="A sophisticated barber in a dark, premium barbershop setting, focused on meticulously styling a client's hair. The atmosphere is luxurious with amber lighting highlighting the glassmorphism elements of the salon. Deep blacks and vibrant orange accents create a moody, high-end nightlife aesthetic. The barber uses professional steel tools that catch the warm light."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGQ1XVHvXiEUv1pPs2k8nng6dJ-3ps2C3Cluf16I29LonngeMAsC2kBLc7wmySe21HtwAcGxVEZ-G36MYgCkExupJOh7OagJru8oyVQaxSFd-ZAxRdmC0bDJIYSSCHM_MawmfqITEKtdPb5MjKVH-ZRu8Waykn38Xtfbo3O4-aWBLBreLU_tD0-RHZPywjff6G098T3gEDdxoIPfgK3MqDTwST5BRuaQMfBe2QFwf1Y3Rv91VwCM6dCXSpKYmCCBFevBM1VTcSaIZ-" />
+            </div>
+            <div>
+                <span class="text-primary font-label-md text-label-md mb-4 block uppercase tracking-widest">قصتنا</span>
+                <h2 class="font-headline-xl text-headline-lg sm:text-headline-xl text-on-surface mb-6">إرث من التميز في كل قصة</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                    بدأت "جزرة" كفكرة بسيطة: تحويل الحلاقة من روتين عادي إلى تجربة فنية. في صالوننا، نعتبر كل زبون لوحة
+                    فنية فريدة، ونستخدم خبرتنا لتقديم أفضل ما يناسب شخصيته وأسلوب حياته.
+                    نحن نؤمن بأن التفاصيل الصغيرة هي ما يصنع الفرق الكبير، من منشفة البخار الساخنة إلى أدق تفاصيل تحديد
+                    اللحية.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-primary text-3xl font-bold">10+</span>
+                        <span class="text-on-surface-variant font-label-sm text-label-sm">سنوات خبرة</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-primary text-3xl font-bold">5k+</span>
+                        <span class="text-on-surface-variant font-label-sm text-label-sm">زبون سعيد</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-24" id="services">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-xl text-center text-headline-lg sm:text-headline-xl text-on-surface mb-4">خدماتنا المتميزة</h2>
+                <div class="h-1 w-24 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-500">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                            data-icon="content_cut">content_cut</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">حلاقة الشعر</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">قصات عصرية وكلاسيكية تناسب شكل
+                        وجهك.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-500">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                            data-icon="face">face</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">تحديد اللحية</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">تحديد دقيق للحية بالخيط أو الموس
+                        مع الترطيب.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-500">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                            data-icon="brush">brush</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">تصفيف (ستايلنج)</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">تجهيز الشعر للمناسبات باستخدام
+                        أفضل المنتجات.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-500">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                            data-icon="child_care">child_care</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">حلاقة للأطفال</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">تجربة مريحة وممتعة لأطفالكم مع
+                        حلاقين مختصين.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="py-24 bg-surface-container" id="team">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="mb-10">
+                    <h2 class="font-headline-xl text-headline-lg sm:text-headline-xl text-on-surface">فريق الحلاقة المحترف</h2>
+                    <p class="text-on-surface-variant mt-2">نخبة من الحلاقين المبدعين في خدمتكم</p>
+                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img alt="Barber Ahmed"
+                        class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="A portrait of a stylish male barber with tattoos and a groomed beard, wearing a professional black apron. He is standing in a premium barber shop with moody dark lighting and orange glow accents. The background features vintage barber chairs and glass cabinets with premium hair products. The overall style is modern luxury with a cinematic feel."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6g63m7F6XoxfXRJT6Zf8Q0nrG1tk-vnNM2Humjl8jBci0rtDXvUoM4pGodecb8sgiWEqnStST1etmZHkpn883Jsh_1mSwo3Z6quFRhO9Idt394utEI9HodVzxJQbFlW7ZoU2f8dihWpZKqw8uWDRuzFPv7YzgRDq-JX1l0Z4xEATH8dFijSX5V42ODfnlS4Mzfu6DkE0qAjljm8K3A0DBSvbVMCD6_udDu_UPt0Kl42NSDY_usypA25GTAm1kZLjteiDekeGtVXCg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 p-8 w-full">
+                        <h4 class="font-headline-md text-headline-md text-white">أحمد فوزي</h4>
+                        <p class="text-primary font-label-md">خبير القصات العصرية</p>
+                        <div
+                            class="flex gap-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">star</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img alt="Barber Omar"
+                        class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Professional barber with a sharp undercut and focused expression, holding grooming tools. The setting is a dark-themed barbershop in Doha with luxury accents, featuring semi-transparent glass dividers and orange neon lighting. The mood is sophisticated and masculine, highlighting the premium grooming experience. Soft bokeh highlights the meticulous details of the workspace."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfLfs0Zh--PyPDIb5PjNgKSj9IOeRFKnOls3cZ6nSj4KyqhSmnr2egIo6CkqgUSABi0C4ZmSSI9kXU6y-d8Uc2F8zLBalIeZ0BQqfEcD9Z7ji0QkQc2E8gsP190qBuYQMDsrx1xHWS9_VfXvIaOjJTtU8uxHG_o_2iXDQThWeSXHrYqz7jYBWeftOGF_gNgFgwEnwRFmiY4erd0u3vDRr-Bb30zskOUjBwXK-qBdQuBA30l1MO3PHaR4YhRbzjRdsdoyeEz5LHi06o" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 p-8 w-full">
+                        <h4 class="font-headline-md text-headline-md text-white">عمر الدوسري</h4>
+                        <p class="text-primary font-label-md">أخصائي تحديد اللحية</p>
+                        <div
+                            class="flex gap-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">star</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img alt="Barber Karim"
+                        class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-110"
+                        data-alt="A smiling, friendly barber in a modern luxury salon environment. The design features glassmorphism surfaces and dark furniture with clinical orange lighting accents. He is professionally dressed, reflecting a blend of tradition and modern trends. The background shows a clean, high-end grooming studio in Qatar, emphasizing craftsmanship and hospitality."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG2l9MV0xc2OjaQ5ahkP350RzrgmH7Fwh94p0OiF0GjcGMAJYriaTSOy2ODuMWl5e0P26O0nQCGW1fUr0Z8OFRKhK6lJYrFIwnSle0cL6UGxzP3_SD_3eueTFV2GQNhtwxmeY2d1CZdoJ-Fey7gS1yegV9MV8iEzO6n9eaIcobqnpxY3_qrHu7Tcuq3w2ChZTMPZoMvk4MjB7jRXzObvrUXmdpIcHMMTmG4M92URyxNdsrA4gaFZPLGH9qWw4pJ0-j1iAhSvKd20nt" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 p-8 w-full">
+                        <h4 class="font-headline-md text-headline-md text-white">كريم علي</h4>
+                        <p class="text-primary font-label-md">ماستر القصات الكلاسيكية</p>
+                        <div
+                            class="flex gap-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">star</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="py-24" id="gallery">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-xl text-headline-lg sm:text-headline-xl text-on-surface mb-4">معرض الإبداع</h2>
+                <p class="text-on-surface-variant">شاهد نتائج عملنا على أرض الواقع</p>
+            </div>
+            <div class="columns-1 md:columns-3 gap-6 space-y-6">
+                <div class="masonry-item rounded-xl overflow-hidden glass-card">
+                    <img alt="Style 1" class="w-full hover:scale-105 transition-transform duration-500"
+                        data-alt="Detailed close-up of a sharp haircut with a clean fade in a high-end barbershop. The lighting is cinematic with deep orange highlights on the edges of the hair. The background is a dark, sophisticated salon interior with glass surfaces and subtle reflections. Professional grooming aesthetic with high contrast and sharp focus on the hair craftsmanship."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuK8pMzguM7-5D-rsbhA2uxwWyIornPFzlvE4o_ny5lzQT-I_UgbU1ic7GrELHB4VjBIjcoojAgIEPSt92ofLRQufMBvBiMIOoCncXvEscKMThRyVad4CQnMI0B2dVYsWIleq5-z4cOVhglP-LVn8zYbON1SFpu-JCEf-lyoiADWijPd8-MFtVVIHfXzE28MNzkuS9nJZxQp31X2rRLvBlINR54HYWJ-Gw62Fsv2BjkjFEEBXAfJ5GMV_ZnuJmEe4v6nDpe_8uo5RK" />
+                </div>
+                <div class="masonry-item rounded-xl overflow-hidden glass-card">
+                    <img alt="Style 2" class="w-full hover:scale-105 transition-transform duration-500"
+                        data-alt="A customer receiving a traditional hot towel shave in a premium dark-themed barbershop. The atmosphere is calm and relaxing with warm ambient light. High-end glassmorphism elements are visible in the background equipment. The image emphasizes high-tier hospitality and meticulous care, using a palette of blacks, grays, and glowing orange accents."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaaeXz089wjwzMD76cXrXKozcWhdsyMiDVmpmDBbtM9LWAH9L5OLWoXWlP6qYui7kWPhw7Q5ZaqbNskFqvXNzm22WnXe9FCUAYqZx3lYp3uKPI6sIw9pXlWeAbnzhx8UN7lOKO6oJ8p3Bb1-lE1LIN-YqnbKIj7lGK0JsBSkmjUrQkc8A2294d4ka3Grd6DpSzvq0tKsMgHY_2R12niRJPoekxEKQ-qhohu7ADkJKIizaK3KVoP61bl4uJmi8SIVep6DIRL9Lgd9PX" />
+                </div>
+                <div class="masonry-item rounded-xl overflow-hidden glass-card">
+                    <img alt="Salon View" class="w-full hover:scale-105 transition-transform duration-500"
+                        data-alt="Interior wide shot of Jazara barbershop, showing a row of modern black leather barber chairs under sleek, minimalist orange neon lighting. Translucent glass dividers separate the stations. The floor is dark polished concrete, and the overall aesthetic is minimalist luxury. The room feels spacious, exclusive, and unhurried, reflecting a sanctuary of community and craft."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi0XAqU1FpmKmKoeyD-lNynP9NLGWK8vZDSA4XtqukbvoD9HOU8PpRuJAQAEXcbx2RL-dRlar6Nhh7yRQia_t8Is2iRcRhiTe420Iv7CfSiC5elHPhgfnkKQIuRdkzwqNLzU90wynqQxWsplqYQyNS8pjonwDM-H6SgCMNxJWbNbYogvILkjVUEpRfVoiwz7GhSARgB5DER7KF5xgiEv2JQ3HxUCS8KYk8lhqMD7AUiSdAnOcJ_FawKRnW6nB3az5VynivpzHBodgw" />
+                </div>
+                <div class="masonry-item rounded-xl overflow-hidden glass-card">
+                    <img alt="Tools" class="w-full hover:scale-105 transition-transform duration-500"
+                        data-alt="Close up of barber tools—scissors and a clipper—laid out on a dark leather tray with an orange glow reflecting off the steel surfaces. The lighting is moody and premium. The setting is Jazara barbershop, focusing on the precision and quality of the tools. The image has a sharp, clinical yet energetic feel with a deep ink-black foundation."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNlyHl7ySoxpUdZQDPRhCBXwrgVHqV0jQhXEnWIS441x6z2tpCbviQKTUtPDKwmKk3ksGWlNqAh77VpETd573h44ecikiSgBl9-8cVPAk-JtrifPj2WWVC-BUNiZIjgJMsE22NyxvFP5ZBQmjjxmM_3Nq2V2rV8w5qUAeoM9XfTDxoDxNAWSHnlrstD0NpeEXHhHXCqnv7GPSroIKTGlwYo4Hk-6ZYFi0G1x2vzOoENDCcGYJE8CGt9V2bhLkI2qyMdSc5T6D_Tkp" />
+                </div>
+                <div class="masonry-item rounded-xl overflow-hidden glass-card">
+                    <img alt="Happy Client" class="w-full hover:scale-105 transition-transform duration-500"
+                        data-alt="Portrait of a satisfied customer with a freshly styled hair and beard combo, sitting in a luxury chair. The lighting captures the orange glow of the shop's branding. The background is blurred, showing a sophisticated, minimalist barbershop in Doha. The mood is confident and sharp, reinforcing the brand's 'Midnight Premium' aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJwfAOkPW3Xi9vCazDwXgXylcz45pmwtX2YJYOvltNTdcdbB1q1RxKlxEATk6KIpJSv5JAsPPLgvQaexIE7Vw5wz6I8RHVffkDsjebD7sfDWcKX31Ayg_C0yMNTkMEEPMICild-TEKRED2cCmMQmF5f8-JH3eZ71D_nsbv_BgD0FhPWaPwHV7otXccYwL38xFjrd2ERSHYpUVwWTCT4NtnG8fA3HiifSk1CTi13GvFc04xdC75vsEts_YII7mwsWZCMbSfVKCW8m1D" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Map Section -->
+    <section class="py-24 bg-surface" id="contact">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 rounded-3xl">
+                <h2 class="font-headline-xl text-headline-lg sm:text-headline-xl text-on-surface mb-8">تواصل معنا</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-1">الموقع</h4>
+                            <p class="text-on-surface-variant">امام مدرسة ابوحمر للتعليم الأساسي</p>
+                        </div>
+                    </div>
+
+                    <a class="flex gap-6 items-start" href="tel:201104846932" >
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-1">الهاتف</h4>
+                            <p class="text-on-surface-variant" dir="ltr">01104846932</p>
+                        </div>
+                    </a>
+
+                    <a class="flex gap-6 items-start" href="https://wa.me/201104846932" target="_blank">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp text-[24px] text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-1">واتساب</h4>
+                            <p class="text-on-surface-variant" dir="ltr">01104846932</p>
+                        </div>
+                    </a>
+
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary">schedule</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-on-surface mb-1">ساعات العمل</h4>
+                            <p class="text-on-surface-variant">يوميا : 10 صباحاً - 10 مساءً</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all"
+                        href="#">
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all"
+                        href="#">
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/HgVhDdmBds3euUxX6" target="_blank" class="rounded-3xl overflow-hidden relative border glass-card border-white/5">
+                <img alt="Doha Map" class="w-full h-full object-cover grayscale opacity-60"
+                    data-alt="A stylized digital map of Doha, Qatar, rendered in a midnight premium aesthetic with dark charcoal backgrounds and glowing orange points of interest. The map shows the coastal area with sleek, minimalist lines and glowing trails, highlighting the exclusive location of the barbershop. It avoids clutter, prioritizing a modern and technologically advanced UI feel."
+                    data-location="Doha"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNZpSHole5ob94jdY8Y-9WZ2SMMt36M2jh9NLjVHAA-6PAVo5kKopZIKb6_5c91Ii-JqZ_gpGy1llKP7cxoEMgXyPG5O_eA4RDz9c5Qo0olkH68XIwbdbnL7zhFFtuTeQmgxTODDOECE_jihfLPXrBRMQ7oOXco1GyEDpyfQAZamYnBEISQrZ9BMxvuVMlBUxIrt9SsagXczRo9IU0pkTlKI_0HpyMjwGFmAeDFob9Ix6XZa3m3Q8wl5RGgxdWKl2CXXaMNVcyRQCK" />
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-primary p-4 rounded-full animate-pulse shadow-2xl shadow-primary">
+                        <span class="material-symbols-outlined text-on-primary text-3xl">location_on</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest w-full pb-12 border-t border-surface-variant">
+        
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop  pt-8 border-t border-white/5 text-center">
+            <p class="text-on-surface-variant text-label-md">© 2026 صالون جزرة | جميع الحقوق محفوظة</p>
+            <a href="https://magdyziad.vercel.app/" target="_blank" class="text-on-surface-variant text-label-md mt-4 py-3">مصمم الموقع : المبرمج مجدي زياد . اضغط للتواصل</a>
+        </div>
+    </footer>
+    <!-- FAB for quick booking -->
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
